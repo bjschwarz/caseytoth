@@ -90,7 +90,7 @@ export default function DrawerAppBar() {
           style={{
             display: { xs: 'none', sm: 'block' },
             width: '100%',
-            maxWidth: '500px',
+            maxWidth: '600px',
             height: 'auto',
           }}
           src={logo}
@@ -99,13 +99,13 @@ export default function DrawerAppBar() {
         />
         </div>
         <Typography
-            variant="h6"
+            variant="h4"
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
            ✽ B I R T H  W I T N E S S ✽
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block', marginTop: '10px' } }}>
             {Object.entries(navItems).map(([key, value]) => (
               <Button href={value.href} key={value.title} color='secondary'>
                 {value.title}
