@@ -149,11 +149,22 @@ export default function Home() {
         - Tier 1: $140<br/>
         - Tier 2: $180<br/>
         - Tier 3: $220<br/>
-        - Tier 4: $300<br/>
+        - Tier 4: $300<br/><br/>
 
-        (8 percent discount for booking a birth package and two portrait sessions)
+        ✽ (8 percent discount for booking a birth package and two portrait sessions) ✽
         </Typography>
 
+        <Box sx={{
+                 paddingTop: '50px',
+                 paddingBlock: '50px',
+                 backgroundColor: '#f3dfbc',
+                 textAlign: 'center'
+                }}>
+
+          <Typography  variant="h6">
+          <Button variant='outlined' color='secondary' href='https://docs.google.com/forms/d/12W7H8DgLQ1iJb03keb_bJhkgMpZAmQHyotRfR2NKnM8/edit'>Fill out a reservation form</Button>
+          </Typography>
+        </Box>
 
       </Box>
     </Container>
