@@ -10,7 +10,6 @@ export default function Copyright() {
 
     <Box >
       <Typography variant="body2" color="text.secondary" align="center">
-      <IconButton href='https://www.instagram.com/bradleyschwarz/'><InstagramIcon></InstagramIcon></IconButton>
         {'Copyright © '}
           Casey Toth
         {' '}

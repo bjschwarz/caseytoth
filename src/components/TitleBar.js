@@ -105,12 +105,13 @@ export default function DrawerAppBar() {
           >
            ✽ B I R T H  W I T N E S S ✽
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block', marginTop: '10px' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'flex', marginTop: '10px', alignContent: 'center', justifyContent: 'center' } }}>
             {Object.entries(navItems).map(([key, value]) => (
               <Button href={value.href} key={value.title} color='secondary'>
                 {value.title}
               </Button>
             ))}
+            <IconButton size='xsmall' href='https://www.instagram.com/caseytoth/'><InstagramIcon></InstagramIcon></IconButton>
           </Box>
       
       <nav>
