@@ -19,7 +19,7 @@ const InputSide = () => {
 
   return (
     <form
-    action="https://formspree.io/f/mgvwyovy"
+    action="https://formspree.io/f/xbljkgbr"
     method="POST"
   >
     <Box sx={{
