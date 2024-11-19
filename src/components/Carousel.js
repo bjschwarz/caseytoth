@@ -1,15 +1,12 @@
-import { Carousel } from "react-responsive-carousel";
 import items  from "@/components/AboutImages.js";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from 'react-material-ui-carousel'
+import Image from 'next/image'
 
 export default function ResponsiveCarousel() {
   return (
     <div >
       <Carousel
-        showArrows={true}
-        showIndicators={true}
-        infiniteLoop={true}
-        dynamicHeight={false}
+       
       >
         {items.map((item) => (
           <div key={item.id}>

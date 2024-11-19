@@ -23,12 +23,6 @@ export default function About() {
     padding: theme.spacing(1),
   }));
 
-  const DATA = [
-    { image: portrait },
-    { image: portrait },
-    { image: portrait },
-  ]
-
   return (
     <Container sx={{paddingTop: '64px'}} maxWidth="lg">
       <TitleBar></TitleBar>
@@ -42,18 +36,8 @@ export default function About() {
       >
         <Grid container spacing={4}>
           <Grid xs={12} md={6}>
-            <Item elevation={0}>
-              
-              {/* <Carousel data={DATA}></Carousel> */}
-              <Image
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                }}
-                src={portrait}
-                alt='logo'
-                loading="eager"
-              />
+            <Item elevation={0}>    
+              <Carousel></Carousel>
             </Item>
           </Grid>
           <Grid xs={12} md={6}>

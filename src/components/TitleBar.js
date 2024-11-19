@@ -20,10 +20,10 @@ import Image from 'next/image'
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 
 const navItems = {
-  gallery: {title: "Home", href : "/"},
+  gallery: {title: "Offerings", href : "/"},
   faq: {title: "FAQ", href : "/faq"},
   about: {title: "About", href : "/about"},
   contact: {title: "Connect", href : "/contact"},
