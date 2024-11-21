@@ -10,8 +10,21 @@ import Copyright from '@/components/Copyright';
 import TitleBar from '@/components/TitleBar';
 import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
+import items from "@/components/PortfolioImages.js";
+import Image from 'next/image'
+import { useRef } from 'react';
+import { Icon } from '@mui/material';
+import IconButton from '@mui/material';
+import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 
 export default function Home() {
+
+  const imagegallery = useRef(null);
+
+  const scroll = (scrollOffset) => {
+    console.log(imagegallery)
+    imagegallery.current.scrollLeft += scrollOffset;
+  };
 
   const Item = styled(Box)(({ theme }) => ({
     padding: theme.spacing(1),
@@ -22,20 +35,21 @@ export default function Home() {
       <TitleBar></TitleBar>
       <Box
         sx={{
-          mt:8,
+          mt:6,
           display: 'flex',
           flexDirection: 'column',
           gap: 4
         }}
       >
         <Box sx={{
-                 paddingTop: '50px',
-                 paddingBlock: '50px',
-                 backgroundColor: '#f3dfbc',
+                 borderRadius: '10px',
+                 paddingTop: '30px',
+                 paddingBlock: '30px',
+                 backgroundColor: '#000',
                  textAlign: 'center'
                 }}>
 
-          <Typography  variant="h6">
+          <Typography color="primary" variant="h6">
           <i>Documenting pregnancy, homebirth, & postpartum for women and families in central NC</i>
           </Typography>
         </Box>
@@ -45,14 +59,24 @@ export default function Home() {
         </Typography>
 
         <Typography variant="body" component="">
-        I offer both photo & video services to preserve the precious memories along your journey of nurturing new human life. From portraits of your growing belly, to the unique story of your homebirth, and of course the beloved fresh newborn session, you will be seen in your splendor. Based in Durham, serving the Triangle area, Raleigh, Chapel Hill, Cary Hillsborough & beyond.
+        I offer both video & photo imagery to preserve precious memories along your motherhood journey. From portraits of your growing belly, to the unique story of your homebirth, and of course the beloved fresh newborn session, you will be seen in your splendor. Based in Durham, serving the Triangle area, Raleigh, Chapel Hill, Cary, Hillsborough, etc.
         </Typography>
+
+        <div>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'start',
+          alignContent:'center',
+          textAlign: 'center'
+        }}><Typography variant='h5'><b>✽ VIDEO ✽</b></Typography> 
+        </Box>
 
         <Grid container spacing={4}>
           <Grid xs={12} md={6}>
             <Item elevation={0}>    
             <video width="100%" height="auto" controls>
-              <source src="/reel_vertical_v1.mp4" type="video/mp4" />
+              <source src="/reel_vertical_v2.mp4" type="video/mp4" />
               
               Your browser does not support the video tag.
             </video>
@@ -61,13 +85,60 @@ export default function Home() {
           <Grid xs={12} md={6}>
             <Item elevation={0}>    
             <video width="100%" height="auto" controls>
-              <source src="/reel_vertical_v2_2.mp4" type="video/mp4" />
+              <source src="/reel_vertical_v3.mp4" type="video/mp4" />
               
               Your browser does not support the video tag.
             </video>
             </Item>
           </Grid>
         </Grid>
+        </div>
+
+        <div>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'start',
+          alignContent:'center',
+          textAlign: 'center'
+        }}><Typography variant='h5'><b>✽ PHOTO ✽</b></Typography> 
+        </Box>
+
+        <Box  sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignContent:'center',
+        }}>
+        <div ref={imagegallery} className="image-gallery">
+          <div className="image-container">
+            {items.map((image, index) => (
+              <div key={index} className="image-wrapper">
+                <Image 
+                className='image-itself'
+                  src={image.img} 
+                  alt={image.alt}
+                  height={500}
+                  width={500}
+                  layout="responsive" 
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'start',
+          alignContent:'center',
+          textAlign: 'center',
+          gap: 1
+        }}>
+            <Button variant='contained' color="secondary" onClick={() => scroll(-200)}><ChevronLeft></ChevronLeft></Button>
+            <Button variant='contained' color='secondary' onClick={() => scroll(200)}><ChevronRight></ChevronRight></Button>
+        </Box>
+        </Box>
+        </div>
 
         <Typography variant="body">
         <b>TIERED PRICING BY HOUSEHOLD INCOME</b><br/>
@@ -151,21 +222,23 @@ export default function Home() {
         - Tier 3: $220<br/>
         - Tier 4: $300<br/><br/>
 
-        ✽ (8 percent discount for booking a birth package and two portrait sessions) ✽
+        ✽ 8 percent discount for booking a birth package and two portrait sessions ✽
         </Typography>
 
         <Box sx={{
-                 paddingTop: '50px',
-                 paddingBlock: '50px',
-                 backgroundColor: '#f3dfbc',
-                 textAlign: 'center'
+                 paddingTop: '30px',
+                 paddingBlock: '30px',
+                 backgroundColor: '#000',
+                 textAlign: 'center',
+                 borderRadius: '10px'
                 }}>
 
           <Typography  variant="h6">
-          <Button variant='outlined' color='secondary' href='https://docs.google.com/forms/d/12W7H8DgLQ1iJb03keb_bJhkgMpZAmQHyotRfR2NKnM8/edit'>Fill out a reservation form</Button>
+          <Button size='large' variant='outlined' color='primary' href='https://docs.google.com/forms/d/12W7H8DgLQ1iJb03keb_bJhkgMpZAmQHyotRfR2NKnM8/edit'>Reservation Form</Button>
           </Typography>
         </Box>
 
+       
       </Box>
     </Container>
   );

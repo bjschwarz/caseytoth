@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import { Padding } from '@mui/icons-material';
 import { GlobalStyles } from '@mui/material';
 import Copyright from '@/components/Copyright';
+import './styles.css'; 
 
 export default function RootLayout(props) {
 

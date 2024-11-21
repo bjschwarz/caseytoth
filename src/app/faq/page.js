@@ -24,7 +24,7 @@ export default function FAQ() {
                 }}>
             <Typography variant="body" component="">
             <b>Where do we start?</b><br></br>
-            Reach out to schedule a free phone call, video call, or in-person meeting to feel whether we will be a good fit and I can answer any lingering questions you may have. Then you can fill out a reservation form (or print and write your answers). We will go through all your answers together during our two-hour in-home prenatal creative consultation. 
+            You can reach out schedule a free phone call, video call, or in-person meeting to feel whether we will be a good fit and I can answer any lingering questions you may have. Then you can fill out a reservation form (or print and write your answers). We will go through all your answers together during our two-hour in-home prenatal creative consultation. 
             </Typography>
 
             <Typography variant="body" component="">
@@ -34,7 +34,7 @@ export default function FAQ() {
 
             <Typography variant="body" component="">
             <b>What presence will you have in my birth space?</b><br></br>
-            Your birth space is sacred and I regard an invitation to be a tremendous honor. I balance my responsibilities for documenting with respecting your privacy, holding space for you and your family, and offering additional support as needed. My cameras are silent, unless a flash is desired. You can decide what type of supplemental lighting you want, if any. I will wear dark, solid, neutral-colored, natural fiber, fragrance-free clothing. Most women and families say they never knew I was there.
+            I regard an invitation to be in your birth space to be a tremendous honor. I balance my responsibilities for documenting with respecting your privacy, holding space for you and your family, and offering additional support as needed. My cameras are silent, unless a flash is desired. You can decide what type of supplemental lighting you want, if any. I will wear dark, solid, neutral-colored, natural fiber, fragrance-free clothing. Most people say they forgot I was there.
             </Typography>
 
             <Typography variant="body" component="">
@@ -74,7 +74,7 @@ export default function FAQ() {
 
             <Typography variant="body" component="">
             <b>Why do you charge based on household income?</b><br></br>
-            I want my services to be accessible for a diversity of women and families in our community, especially Black Indigenous People of Color who face significantly higher rates of maternal mortality rates in hospitals, and I believe accessibility is best achieved by higher-income clients subsidizing the cost of my services for lower-income clients.
+            I want my services to be accessible for a diversity of women and families in our community, especially Black Indigenous People of Color who face significantly higher rates of maternal mortality rates birthing in hospitals, and I believe accessibility is best achieved by higher-income clients subsidizing the cost of my services for lower-income clients.
             </Typography>
 
             <Typography variant="body" component="">
