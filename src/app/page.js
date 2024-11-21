@@ -69,7 +69,7 @@ export default function Home() {
           justifyContent: 'start',
           alignContent:'center',
           textAlign: 'center'
-        }}><Typography variant='h5'><b>✽ VIDEO ✽</b></Typography> 
+        }}><Typography variant='h5'><b>✽ V I D E O ✽</b></Typography> 
         </Box>
 
         <Grid container spacing={4}>
@@ -100,8 +100,9 @@ export default function Home() {
           flexDirection: 'row',
           justifyContent: 'start',
           alignContent:'center',
-          textAlign: 'center'
-        }}><Typography variant='h5'><b>✽ PHOTO ✽</b></Typography> 
+          textAlign: 'center',
+          paddingBottom: '10px'
+        }}><Typography variant='h5'><b>✽ P H O T O ✽</b></Typography> 
         </Box>
 
         <Box  sx={{
